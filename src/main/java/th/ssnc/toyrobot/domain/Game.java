@@ -113,8 +113,8 @@ public class Game {
      * @throws Exception
      * **/
     public String report() throws Exception {
-        if (robot.getCoordinates() == null)
-            throw new Exception("Invalid robot coordinates");
+        if (robot.getCoordinates() == null || robot.getDirection() == null)
+            throw new Exception("Invalid robot coordinates/direction");
 
         return robot.getCoordinates().getX() 
             + "," + robot.getCoordinates().getY() 

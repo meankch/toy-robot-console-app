@@ -109,7 +109,7 @@ public class GameTest {
 
         // then
         Throwable exception = assertThrows(Exception.class, () -> game.report());
-        assertEquals("Invalid robot coordinates", exception.getMessage());   
+        assertEquals("Invalid robot coordinates/direction", exception.getMessage());   
     }
 
     @Test
